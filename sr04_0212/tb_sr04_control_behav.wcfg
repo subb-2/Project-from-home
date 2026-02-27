@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_sr04_control_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_sr04_control" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="11781100001fs"></ZoomEndTime>
+      <Cursor1Time time="10781105000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="181"></NameColumnWidth>
+      <ValueColumnWidth column_width="74"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/tb_sr04_control/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sr04_control/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sr04_control/echo" type="logic">
+      <obj_property name="ElementShortName">echo</obj_property>
+      <obj_property name="ObjectShortName">echo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sr04_control/dut/U_SR04_CONTROLLER/echo_cnt_reg" type="array">
+      <obj_property name="ElementShortName">echo_cnt_reg[21:0]</obj_property>
+      <obj_property name="ObjectShortName">echo_cnt_reg[21:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sr04_control/dut/U_SR04_CONTROLLER/echo_cnt_next" type="array">
+      <obj_property name="ElementShortName">echo_cnt_next[21:0]</obj_property>
+      <obj_property name="ObjectShortName">echo_cnt_next[21:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sr04_control/dut/U_SR04_CONTROLLER/calcu_done_reg" type="logic">
+      <obj_property name="ElementShortName">calcu_done_reg</obj_property>
+      <obj_property name="ObjectShortName">calcu_done_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sr04_control/dist" type="array">
+      <obj_property name="ElementShortName">dist[8:0]</obj_property>
+      <obj_property name="ObjectShortName">dist[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sr04_control/btn_r" type="logic">
+      <obj_property name="ElementShortName">btn_r</obj_property>
+      <obj_property name="ObjectShortName">btn_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sr04_control/dut/w_sr04_start" type="logic">
+      <obj_property name="ElementShortName">w_sr04_start</obj_property>
+      <obj_property name="ObjectShortName">w_sr04_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sr04_control/dut/U_SR04_CONTROLLER/c_state" type="array">
+      <obj_property name="ElementShortName">c_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">c_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sr04_control/dut/U_SR04_CONTROLLER/n_state" type="array">
+      <obj_property name="ElementShortName">n_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">n_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sr04_control/dut/U_SR04_CONTROLLER/sr04_tick" type="logic">
+      <obj_property name="ElementShortName">sr04_tick</obj_property>
+      <obj_property name="ObjectShortName">sr04_tick</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sr04_control/trigger" type="logic">
+      <obj_property name="ElementShortName">trigger</obj_property>
+      <obj_property name="ObjectShortName">trigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sr04_control/dut/U_SR04_CONTROLLER/sr04_tick_cnt_reg" type="array">
+      <obj_property name="ElementShortName">sr04_tick_cnt_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sr04_tick_cnt_reg[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sr04_control/dut/U_SR04_CONTROLLER/sr04_tick_cnt_next" type="array">
+      <obj_property name="ElementShortName">sr04_tick_cnt_next[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sr04_tick_cnt_next[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sr04_control/dut/U_BTN_SR04_START/counter_reg" type="array">
+      <obj_property name="ElementShortName">counter_reg[9:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_reg[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

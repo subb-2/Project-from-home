@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_sender_stopwatch_watch_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_sender_stopwatch_watch" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="546979345000fs"></ZoomStartTime>
+      <ZoomEndTime time="556089345001fs"></ZoomEndTime>
+      <Cursor1Time time="549919345000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="181"></NameColumnWidth>
+      <ValueColumnWidth column_width="74"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/tb_sender_stopwatch_watch/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sender_stopwatch_watch/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sender_stopwatch_watch/sw" type="array">
+      <obj_property name="ElementShortName">sw[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group48" type="group">
+      <obj_property name="label">ascii_sender</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/mux_2x1_set" type="array">
+         <obj_property name="ElementShortName">mux_2x1_set[23:0]</obj_property>
+         <obj_property name="ObjectShortName">mux_2x1_set[23:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/ascii_d_s" type="logic">
+         <obj_property name="ElementShortName">ascii_d_s</obj_property>
+         <obj_property name="ObjectShortName">ascii_d_s</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/tx_done" type="logic">
+         <obj_property name="ElementShortName">tx_done</obj_property>
+         <obj_property name="ObjectShortName">tx_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/tx_start" type="logic">
+         <obj_property name="ElementShortName">tx_start</obj_property>
+         <obj_property name="ObjectShortName">tx_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/tx_data" type="array">
+         <obj_property name="ElementShortName">tx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_data[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/ascii_hour_10" type="array">
+         <obj_property name="ElementShortName">ascii_hour_10[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ascii_hour_10[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/ascii_hour_1" type="array">
+         <obj_property name="ElementShortName">ascii_hour_1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ascii_hour_1[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/ascii_min_10" type="array">
+         <obj_property name="ElementShortName">ascii_min_10[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ascii_min_10[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/ascii_min_1" type="array">
+         <obj_property name="ElementShortName">ascii_min_1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ascii_min_1[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/ascii_sec_10" type="array">
+         <obj_property name="ElementShortName">ascii_sec_10[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ascii_sec_10[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/ascii_sec_1" type="array">
+         <obj_property name="ElementShortName">ascii_sec_1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ascii_sec_1[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/ascii_msec_10" type="array">
+         <obj_property name="ElementShortName">ascii_msec_10[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ascii_msec_10[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/ascii_msec_1" type="array">
+         <obj_property name="ElementShortName">ascii_msec_1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ascii_msec_1[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/send_hour_10" type="array">
+         <obj_property name="ElementShortName">send_hour_10[7:0]</obj_property>
+         <obj_property name="ObjectShortName">send_hour_10[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/send_hour_1" type="array">
+         <obj_property name="ElementShortName">send_hour_1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">send_hour_1[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/send_min_10" type="array">
+         <obj_property name="ElementShortName">send_min_10[7:0]</obj_property>
+         <obj_property name="ObjectShortName">send_min_10[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/send_min_1" type="array">
+         <obj_property name="ElementShortName">send_min_1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">send_min_1[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/send_sec_10" type="array">
+         <obj_property name="ElementShortName">send_sec_10[7:0]</obj_property>
+         <obj_property name="ObjectShortName">send_sec_10[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/send_sec_1" type="array">
+         <obj_property name="ElementShortName">send_sec_1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">send_sec_1[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/send_msec_10" type="array">
+         <obj_property name="ElementShortName">send_msec_10[7:0]</obj_property>
+         <obj_property name="ObjectShortName">send_msec_10[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/send_msec_1" type="array">
+         <obj_property name="ElementShortName">send_msec_1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">send_msec_1[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/c_state" type="array">
+         <obj_property name="ElementShortName">c_state[3:0]</obj_property>
+         <obj_property name="ObjectShortName">c_state[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/n_state" type="array">
+         <obj_property name="ElementShortName">n_state[3:0]</obj_property>
+         <obj_property name="ObjectShortName">n_state[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/send_cnt_reg" type="array">
+         <obj_property name="ElementShortName">send_cnt_reg[3:0]</obj_property>
+         <obj_property name="ObjectShortName">send_cnt_reg[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/send_cnt_next" type="array">
+         <obj_property name="ElementShortName">send_cnt_next[3:0]</obj_property>
+         <obj_property name="ObjectShortName">send_cnt_next[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/data_cap_r" type="array">
+         <obj_property name="ElementShortName">data_cap_r[23:0]</obj_property>
+         <obj_property name="ObjectShortName">data_cap_r[23:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/IDLE" type="array">
+         <obj_property name="ElementShortName">IDLE[3:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/SEND" type="array">
+         <obj_property name="ElementShortName">SEND[3:0]</obj_property>
+         <obj_property name="ObjectShortName">SEND[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_ASCII_SENDER/WAIT" type="array">
+         <obj_property name="ElementShortName">WAIT[3:0]</obj_property>
+         <obj_property name="ObjectShortName">WAIT[3:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group66" type="group">
+      <obj_property name="label">watch</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_WATCH_DATAPATH/msec" type="array">
+         <obj_property name="ElementShortName">msec[6:0]</obj_property>
+         <obj_property name="ObjectShortName">msec[6:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_WATCH_DATAPATH/sec" type="array">
+         <obj_property name="ElementShortName">sec[5:0]</obj_property>
+         <obj_property name="ObjectShortName">sec[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_WATCH_DATAPATH/min" type="array">
+         <obj_property name="ElementShortName">min[5:0]</obj_property>
+         <obj_property name="ObjectShortName">min[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_WATCH_DATAPATH/hour" type="array">
+         <obj_property name="ElementShortName">hour[4:0]</obj_property>
+         <obj_property name="ObjectShortName">hour[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group61" type="group">
+      <obj_property name="label">stopwatch</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_STOPWATCH_DATAPATH/msec" type="array">
+         <obj_property name="ElementShortName">msec[6:0]</obj_property>
+         <obj_property name="ObjectShortName">msec[6:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_STOPWATCH_DATAPATH/sec" type="array">
+         <obj_property name="ElementShortName">sec[5:0]</obj_property>
+         <obj_property name="ObjectShortName">sec[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_STOPWATCH_DATAPATH/min" type="array">
+         <obj_property name="ElementShortName">min[5:0]</obj_property>
+         <obj_property name="ObjectShortName">min[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_sender_stopwatch_watch/dut/U_STOPWATCH_DATAPATH/hour" type="array">
+         <obj_property name="ElementShortName">hour[4:0]</obj_property>
+         <obj_property name="ObjectShortName">hour[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_sender_stopwatch_watch/btn_r" type="logic">
+      <obj_property name="ElementShortName">btn_r</obj_property>
+      <obj_property name="ObjectShortName">btn_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sender_stopwatch_watch/btn_l" type="logic">
+      <obj_property name="ElementShortName">btn_l</obj_property>
+      <obj_property name="ObjectShortName">btn_l</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sender_stopwatch_watch/btn_u" type="logic">
+      <obj_property name="ElementShortName">btn_u</obj_property>
+      <obj_property name="ObjectShortName">btn_u</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sender_stopwatch_watch/btn_d" type="logic">
+      <obj_property name="ElementShortName">btn_d</obj_property>
+      <obj_property name="ObjectShortName">btn_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sender_stopwatch_watch/rx" type="logic">
+      <obj_property name="ElementShortName">rx</obj_property>
+      <obj_property name="ObjectShortName">rx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sender_stopwatch_watch/tx" type="logic">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sender_stopwatch_watch/fnd_digit" type="array">
+      <obj_property name="ElementShortName">fnd_digit[3:0]</obj_property>
+      <obj_property name="ObjectShortName">fnd_digit[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sender_stopwatch_watch/fnd_data" type="array">
+      <obj_property name="ElementShortName">fnd_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fnd_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sender_stopwatch_watch/test_data" type="array">
+      <obj_property name="ElementShortName">test_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">test_data[7:0]</obj_property>
+   </wvobject>
+</wave_config>
