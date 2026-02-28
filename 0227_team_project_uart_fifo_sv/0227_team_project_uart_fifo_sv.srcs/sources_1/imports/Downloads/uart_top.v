@@ -1,10 +1,11 @@
 `timescale 1ns / 1ps
 
 module uart_top (
-    input        clk,
-    input        rst,
-    input        uart_rx,
-    output       uart_tx
+    input  clk,
+    input  rst,
+    input  uart_rx,
+    output uart_tx,
+    output tx_done
 );
 
     wire w_b_tick, w_rx_done;
@@ -18,7 +19,7 @@ module uart_top (
         .b_tick(w_b_tick),
         .tx_data(w_tx_fifo_pop_data),
         .tx_busy(w_tx_busy),
-        .tx_done(),
+        .tx_done(tx_done),
         .uart_tx(uart_tx)
     );
 
@@ -112,10 +113,10 @@ module uart_rx (
                 b_tick_cnt_next = 5'd0;
                 bit_cnt_next    = 3'd0;
                 done_next       = 1'b0;
-                
+
                 if (b_tick & !rx) begin
-                    buf_next        = 8'd0;
-                    n_state = START;
+                    buf_next = 8'd0;
+                    n_state  = START;
                 end
             end
             START: begin
@@ -144,7 +145,7 @@ module uart_rx (
                 end
             end
 
-            STOP : begin
+            STOP: begin
                 if (b_tick) begin
                     if (b_tick_cnt_reg == 16) begin
                         n_state   = IDLE;

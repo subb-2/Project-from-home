@@ -11,6 +11,7 @@ module tb_uart_loopback();
     reg clk, rst, rx;
     wire tx;
     reg [7:0] test_data;
+    wire tx_done;
 
     integer i, j;
 
@@ -18,7 +19,8 @@ module tb_uart_loopback();
         .clk(clk),
         .rst(rst),
         .uart_rx(rx),
-        .uart_tx(tx)
+        .uart_tx(tx),
+        .tx_done(tx_done)
     );
 
 
