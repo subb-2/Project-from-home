@@ -78,11 +78,13 @@ class driver;
     transaction tr;
     mailbox #(transaction) gen2drv_mbox;
     virtual uf_interface uf_if;
+    event gen_next_ev;
 
     function new(mailbox#(transaction) gen2drv_mbox,
-                 virtual uf_interface uf_if);
+                 virtual uf_interface uf_if,  event gen_next_ev);
         this.gen2drv_mbox = gen2drv_mbox;
         this.uf_if = uf_if;
+        this.gen_next_ev = gen_next_ev;
     endfunction  //new()
 
     task preset();
@@ -114,6 +116,7 @@ class driver;
 
             // 약간의 여유 시간을 주어 FIFO 상태가 업데이트되게 함
             repeat(5) @(posedge uf_if.clk);
+            ->gen_next_ev;
         end
     endtask
 
@@ -185,15 +188,18 @@ class scorboard;
 
     transaction tr;
     mailbox #(transaction) mon2scb_mbox;
-    event gen_next_ev;
+
+    int compared_cnt = 0; // 현재까지 비교한 개수
+    int total_cnt = 10;   // 총 비교해야 할 목표 개수
+    event test_done_ev;   // 테스트 종료를 알리는 이벤트
 
     //queue 
-    logic [7:0] uf_queue[$:16];  //size 지정 안하면 무한대 
+    logic [7:0] uf_queue[$];  //size 지정 안하면 무한대 
     logic [7:0] compare_data;
 
-    function new(mailbox#(transaction) mon2scb_mbox, event gen_next_ev);
+    function new(mailbox#(transaction) mon2scb_mbox, event test_done_ev);
         this.mon2scb_mbox = mon2scb_mbox;
-        this.gen_next_ev  = gen_next_ev;
+        this.test_done_ev  = test_done_ev;
     endfunction  //new()
 
     task run();
@@ -214,11 +220,16 @@ class scorboard;
                     compare_data = uf_queue.pop_front(); 
                     if (compare_data === tr.tx_data) $display("PASS!!!");
                     else $display("FAIL!!! (Exp:%h, Act:%h)", compare_data, tr.tx_data);
+
+                    compared_cnt++;
+                    if (compared_cnt == total_cnt) begin
+                        -> test_done_ev;
+                    end
                 end else begin
                     $display("%t : [SCB] Hardware still outputting xx, skipping compare.", $time);
                 end
             end
-            ->gen_next_ev;
+
         end
     end
 endtask
@@ -236,27 +247,36 @@ class environment;
     mailbox #(transaction) mon2scb_mbox;
 
     event gen_next_ev;
+    event test_done_ev;
 
     function new(virtual uf_interface uf_if);
         gen2drv_mbox = new;
         mon2scb_mbox = new;
 
         gen = new(gen2drv_mbox, gen_next_ev);
-        drv = new(gen2drv_mbox, uf_if);
+        drv = new(gen2drv_mbox, uf_if, gen_next_ev);
         mon = new(mon2scb_mbox, uf_if);
-        scb = new(mon2scb_mbox, gen_next_ev);
+        scb = new(mon2scb_mbox, test_done_ev);
 
     endfunction  //new()
 
     task run();
         drv.preset();
+        scb.total_cnt = 10;
         fork
             gen.run(10);
             drv.run();
             mon.run();
             scb.run();
         join_any
-        #10;
+        @(scb.test_done_ev); 
+        
+        // 마지막 데이터가 처리되는 것을 볼 수 있게 약간의 여유 시간 확보
+        #1;
+        
+        $display("=================================");
+        $display(" TEST FINISHED (All Data Compared) ");
+        $display("=================================");
         $stop;
     endtask  //run
 endclass  //environment
