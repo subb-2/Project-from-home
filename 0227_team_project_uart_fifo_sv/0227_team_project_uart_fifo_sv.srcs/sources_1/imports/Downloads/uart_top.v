@@ -22,7 +22,7 @@ module uart_top (
         .tx_done(tx_done),
         .uart_tx(uart_tx)
     );
-
+    //assign fifo_tx_pop = ~w_tx_busy & ~w_tx_fifo_empty;
     fifo U_FIFO_TX (
         .clk(clk),
         .rst(rst),
